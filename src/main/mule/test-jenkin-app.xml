@@ -17,7 +17,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 output application/json
 ---
 {
-	"Message": "Request received for test request",
+	"Message": "Request received for test request jenkin api",
 	"Status Code":attributes.statusCode,
 	"Payload": payload
 }]]></ee:set-payload>
