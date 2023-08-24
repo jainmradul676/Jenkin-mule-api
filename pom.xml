@@ -37,7 +37,7 @@
 								<workers>1</workers>
 								<workerType>MICRO</workerType>
 								<properties>
-									<env>Sandbox</env>
+									<env>PROD</env>
 								</properties>
 							</cloudHubDeployment>
 						</configuration>
