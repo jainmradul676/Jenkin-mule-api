@@ -31,7 +31,7 @@
 						<extensions>true</extensions>
 						<configuration>
 							<cloudHubDeployment>
-								<applicationName>jenkin-api-sandbox</applicationName>
+								<applicationName>jenkin-api-uat</applicationName>
 								<environment>UAT</environment>
 								<region>us-east-1</region>
 								<workers>1</workers>
