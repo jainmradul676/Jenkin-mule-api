@@ -40,7 +40,7 @@
 								    <anypoiny.platform.client_id>dbb8065f0a6d41aa9db215c8f65b0f9b</anypoiny.platform.client_id>
 								    <anypoiny.platform.client_secret>C6a2A57358254211A979876DCE0F8913</anypoiny.platform.client_secret>
 								    <anypoint.platform.base_uri>https://anypoint.mulesoft.com/</anypoint.platform.base_uri>
-								    <anypoint.platform.analytics_base_uri>https://anypoint.mulesoft.com/</anypoint.platform.analytics_base_uri>
+								    <anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com//</anypoint.platform.analytics_base_uri>
 									<env>UAT</env>
 								</properties>
 							</cloudHubDeployment>
