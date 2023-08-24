@@ -32,12 +32,12 @@
 						<configuration>
 							<cloudHubDeployment>
 								<applicationName>jenkin-api-sandbox</applicationName>
-								<environment>Sandbox</environment>
+								<environment>PROD</environment>
 								<region>us-east-1</region>
 								<workers>1</workers>
 								<workerType>MICRO</workerType>
 								<properties>
-									<env>Sandbox</env>
+									<env>PROD</env>
 								</properties>
 							</cloudHubDeployment>
 						</configuration>

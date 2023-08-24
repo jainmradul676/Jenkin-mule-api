@@ -6,10 +6,10 @@
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="e659f3bb-8d3f-4879-8e3f-2dc514a011d3" basePath="/api">
-		<http:listener-connection host="0.0.0.0" port="${http.port}" />
+		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="test-jenkin-appFlow" doc:id="65a58891-190d-4215-a400-b75d45b66032" >
-		<http:listener doc:name="Listener" doc:id="42daf512-f272-4b03-ad0a-2e8b6afd9d08" config-ref="HTTP_Listener_config" path="/test"/>
+		<http:listener doc:name="get request" doc:id="42daf512-f272-4b03-ad0a-2e8b6afd9d08" config-ref="HTTP_Listener_config" path="/test"/>
 		<http:request method="GET" doc:name="Request get api" doc:id="a1b57abe-d310-45f2-bd64-c27228960544" url="https://api.coindesk.com/v1/bpi/currentprice.json"/>
 		<ee:transform doc:name="Transform to json" doc:id="a7d92988-a272-486c-ba6d-c374c293085f" >
 			<ee:message >
