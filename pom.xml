@@ -21,7 +21,7 @@
 
 	<profiles>
 		<profile>
-			<id>sandbox</id>
+			<id>uat</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -31,13 +31,17 @@
 						<extensions>true</extensions>
 						<configuration>
 							<cloudHubDeployment>
-								<applicationName>jenkin-api-sandbox</applicationName>
-								<environment>PROD</environment>
+								<applicationName>jenkin-api-uat</applicationName>
+								<environment>UAT</environment>
 								<region>us-east-1</region>
 								<workers>1</workers>
 								<workerType>MICRO</workerType>
 								<properties>
-									<env>PROD</env>
+								    <anypoint.platform.client_id>dbb8065f0a6d41aa9db215c8f65b0f9b</anypoint.platform.client_id>
+								    <anypoint.platform.client_secret>C6a2A57358254211A979876DCE0F8913</anypoint.platform.client_secret>
+								    <anypoint.platform.base_uri>https://anypoint.mulesoft.com/</anypoint.platform.base_uri>
+								    <anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com//</anypoint.platform.analytics_base_uri>
+									<env>UAT</env>
 								</properties>
 							</cloudHubDeployment>
 						</configuration>
@@ -46,7 +50,7 @@
 			</build>
 		</profile>
 		<profile>
-			<id>design</id>
+			<id>dev</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -56,13 +60,17 @@
 						<extensions>true</extensions>
 						<configuration>
 							<cloudHubDeployment>
-								<applicationName>jenkin-api-design</applicationName>
-								<environment>Design</environment>
+								<applicationName>jenkin-api-dev</applicationName>
+								<environment>DEV</environment>
 								<region>us-east-1</region>
 								<workers>1</workers>
 								<workerType>MICRO</workerType>
 								<properties>
-									<env>Design</env>
+									 <anypoint.platform.client_id>08aab2c1b4474b979a99065d121ab464</anypoint.platform.client_id>
+								    <anypoint.platform.client_secret>76224693f078442194456c05Cc7916D6</anypoint.platform.client_secret>
+								    <anypoint.platform.base_uri>https://anypoint.mulesoft.com/</anypoint.platform.base_uri>
+								    <anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com//</anypoint.platform.analytics_base_uri>
+									<env>DEV</env>
 								</properties>
 							</cloudHubDeployment>
 						</configuration>
